@@ -22,8 +22,8 @@ class CompositeImageNode:
             "required": {
                 "source_image": ("IMAGE",),
                 "destination_image": ("IMAGE",),
-                "x_position": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0}),
-                "y_position": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0}),
+                "x_position": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.01}),
+                "y_position": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 1.0, "step": 0.01}),
                 "alignment": (["top_left", "center"], {"default": "top_left"}),
             }
         }
